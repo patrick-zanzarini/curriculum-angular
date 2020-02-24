@@ -1,0 +1,39 @@
+@import './../../../styles/variables.scss';
+
+.grid.content-container {
+  padding: 4rem 3rem;
+}
+
+.grid.container-layout {
+  grid-template-columns: 3fr 4fr;
+}
+
+.main-image {
+  background-image: url(https://via.placeholder.com/500x600);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+h1 {
+  font-size: 400%;
+  font-weight: 800;
+  line-height: .9em;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.7em;
+}
+
+ul {
+  margin-top: 2em;
+  text-transform: uppercase;
+  color: $font-dark-color;
+  letter-spacing: .2em;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: $highlight-color;
+}

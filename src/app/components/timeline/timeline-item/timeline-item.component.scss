@@ -1,0 +1,38 @@
+@import "./../../../styles/variables.scss";
+
+.grid.container {
+  grid-template-columns: fit-content(8em) fit-content(8em) 1fr;
+  gap: 1rem;
+}
+
+.grid.separator-grid {
+  grid-template-areas: "icon icon icon"
+                       "empty1 line empty2";
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-rows: fit-content(2em) 1fr;
+}
+
+$icon-size: 1.2em;
+.icon {
+  height: $icon-size;
+  width: $icon-size;
+
+  grid-area: icon;
+  border-radius: 50%;
+  background-color: $highlight-color;
+}
+
+.line {
+  grid-area: line;
+  background-color: $highlight-color;
+  height: 100%;
+  width: 100%;
+}
+
+.line.last {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, $highlight-color);
+}
+
+.content {
+  padding-bottom: 1em;
+}

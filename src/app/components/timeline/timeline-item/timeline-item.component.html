@@ -1,0 +1,10 @@
+<div class="grid container">
+  <strong>{{getDisplayDate(date)}}</strong>
+  <div class="separator-grid">
+    <span class="icon"></span>
+    <div class="line" [ngClass]="{last: isLast}"></div>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>
