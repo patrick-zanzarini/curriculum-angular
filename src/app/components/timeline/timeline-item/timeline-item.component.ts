@@ -13,16 +13,15 @@ export class TimelineItemComponent implements OnInit {
 
   getDisplayDate(date: string): string {
     if (!date) {
-      return '00 / 00';
+      return 'Jan / 0001';
     }
 
     const parsedDate = moment(date);
     if (parsedDate.isValid()) {
-      console.log('valid date');
-      return moment(date).format('MM / YY');
+      return moment(date).format('MMM / YYYY');
     }
 
-    return '00 / 00';
+    return 'Jan / 0001';
   }
   constructor() { }
 

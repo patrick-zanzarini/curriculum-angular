@@ -1,6 +1,8 @@
 <div class="grid container">
-  <strong>{{getDisplayDate(date)}}</strong>
-  <div class="separator-grid">
+  <div class="date-display">
+    <strong class="header-font">{{getDisplayDate(date)}}</strong>
+  </div>
+  <div class="grid separator-layout">
     <span class="icon"></span>
     <div class="line" [ngClass]="{last: isLast}"></div>
   </div>

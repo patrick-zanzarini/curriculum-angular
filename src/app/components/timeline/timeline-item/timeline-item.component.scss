@@ -1,18 +1,18 @@
 @import "./../../../styles/variables.scss";
 
 .grid.container {
-  grid-template-columns: fit-content(8em) fit-content(8em) 1fr;
+  grid-template-columns: 5.5em fit-content(8em) 1fr;
   gap: 1rem;
 }
 
-.grid.separator-grid {
+.grid.separator-layout {
   grid-template-areas: "icon icon icon"
                        "empty1 line empty2";
   grid-template-columns: 1fr 2px 1fr;
   grid-template-rows: fit-content(2em) 1fr;
 }
 
-$icon-size: 1.2em;
+$icon-size: 1.3em;
 .icon {
   height: $icon-size;
   width: $icon-size;
@@ -35,4 +35,9 @@ $icon-size: 1.2em;
 
 .content {
   padding-bottom: 1em;
+}
+
+.date-display {
+  white-space: nowrap;
+  text-transform: uppercase;
 }
