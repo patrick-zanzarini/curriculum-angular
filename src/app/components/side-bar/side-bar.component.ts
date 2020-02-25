@@ -9,7 +9,7 @@ import { SideNavService } from 'src/app/services/side-bar.service';
 export class SideBarComponent implements AfterViewInit {
   currentView: EmbeddedViewRef<any>|null = null;
 
-  @ViewChild('container', { read: ViewContainerRef, static: false })
+  @ViewChild('container', { read: ViewContainerRef })
   container: ViewContainerRef;
 
   constructor(private sideNavService: SideNavService) { }
