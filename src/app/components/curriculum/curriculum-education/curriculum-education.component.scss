@@ -1,4 +1,11 @@
+@import './../../../styles/variables.scss';
+
 h2 {
   margin: 0px;
   margin-bottom: 1rem;
+}
+
+strong {
+  color: $highlight-color;
+  font-size: large;
 }

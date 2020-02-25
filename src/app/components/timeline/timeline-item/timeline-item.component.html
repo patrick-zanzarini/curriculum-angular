@@ -1,16 +1,24 @@
-<div class="grid container">
+<div class="grid container" [ngClass]="{'end-date-width': endDateOnly}">
   <div class="grid date-layout date-display">
-    <span>{{getDisplayDate(from)}}</span>
-    <span>
-      <span *ngIf="to" id="to">to</span>
-      {{getDisplayDate(to)}}
-    </span>
+
+    <ng-container *ngIf="!endDateOnly else endDateTemplate">
+      <span>{{getDisplayDate(from)}}</span>
+      <span>
+        <span *ngIf="to" id="to">to</span>
+        {{getDisplayDate(to)}}
+      </span>
+    </ng-container>
+
   </div>
   <div class="grid separator-layout">
     <span class="icon"></span>
-    <div class="line" [ngClass]="{last: isLast}"></div>
+    <div class="line" [ngClass]="{'last': isLast}"></div>
   </div>
   <div class="content">
     <ng-content></ng-content>
   </div>
 </div>
+
+<ng-template #endDateTemplate>
+  <span>{{getDisplayDate(to)}}</span>
+</ng-template>

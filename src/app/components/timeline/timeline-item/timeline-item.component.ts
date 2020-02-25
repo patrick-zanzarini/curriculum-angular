@@ -11,6 +11,7 @@ export class TimelineItemComponent implements OnInit {
   @Input() from: string;
   @Input() to: string;
   @Input() isLast: boolean;
+  @Input() endDateOnly: boolean;
 
   getDisplayDate(date: string): string {
     if (!date) {
