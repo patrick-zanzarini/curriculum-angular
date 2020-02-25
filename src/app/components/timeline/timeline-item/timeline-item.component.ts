@@ -8,20 +8,21 @@ import * as moment from 'moment';
 })
 export class TimelineItemComponent implements OnInit {
   /* expected format YYYY-MM */
-  @Input() date: string;
+  @Input() from: string;
+  @Input() to: string;
   @Input() isLast: boolean;
 
   getDisplayDate(date: string): string {
     if (!date) {
-      return 'Jan / 0001';
+      return 'Present Day';
     }
 
     const parsedDate = moment(date);
     if (parsedDate.isValid()) {
-      return moment(date).format('MMM / YYYY');
+      return moment(date).format('MM / YYYY');
     }
 
-    return 'Jan / 0001';
+    return date;
   }
   constructor() { }
 

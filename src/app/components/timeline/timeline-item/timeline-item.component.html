@@ -1,6 +1,10 @@
 <div class="grid container">
-  <div class="date-display">
-    <strong class="header-font">{{getDisplayDate(date)}}</strong>
+  <div class="grid date-layout date-display">
+    <span>{{getDisplayDate(from)}}</span>
+    <span>
+      <span *ngIf="to" id="to">to</span>
+      {{getDisplayDate(to)}}
+    </span>
   </div>
   <div class="grid separator-layout">
     <span class="icon"></span>

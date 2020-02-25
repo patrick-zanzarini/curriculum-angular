@@ -12,6 +12,7 @@ import { CurriculumPageComponent } from './pages/curriculum-page/curriculum-page
 import { CurriculumHeaderComponent } from './components/curriculum/curriculum-header/curriculum-header.component';
 import { CurriculumExperienceComponent } from './components/curriculum/curriculum-experience/curriculum-experience.component';
 import { TimelineItemComponent } from './components/timeline/timeline-item/timeline-item.component';
+import { CurriculumEducationComponent } from './components/curriculum/curriculum-education/curriculum-education.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TimelineItemComponent } from './components/timeline/timeline-item/timel
     CurriculumPageComponent,
     CurriculumHeaderComponent,
     CurriculumExperienceComponent,
-    TimelineItemComponent
+    TimelineItemComponent,
+    CurriculumEducationComponent
   ],
   imports: [
     BrowserModule,

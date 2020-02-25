@@ -1,7 +1,7 @@
 @import "./../../../styles/variables.scss";
 
 .grid.container {
-  grid-template-columns: 5.5em fit-content(8em) 1fr;
+  grid-template-columns: 5.5em fit-content(5em) 1fr;
   gap: 1rem;
 }
 
@@ -33,11 +33,20 @@ $icon-size: 1.3em;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, $highlight-color);
 }
 
+.date-display {
+  white-space: nowrap;
+  opacity: .6;
+}
+
+.grid.date-layout {
+  grid-auto-rows: 1em;
+  gap: 0.35em;
+}
+
 .content {
   padding-bottom: 1em;
 }
 
-.date-display {
-  white-space: nowrap;
-  text-transform: uppercase;
+#to {
+  opacity: 0.4;
 }

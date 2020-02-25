@@ -1,10 +1,12 @@
 @import './../../../styles/variables.scss';
 
-.content {
-  padding: 2rem 3rem;
-}
-
 strong {
   color: $highlight-color;
+  font-size: large;
+}
+
+h2 {
+  margin: 0px;
+  margin-bottom: 1rem;
 }
 
