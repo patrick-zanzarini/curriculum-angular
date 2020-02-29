@@ -1,7 +1,20 @@
-.container {
-  min-width: 250px;
+.container-padding {
+  padding: 3rem;
 }
 
-.container > .container-padding {
-  padding: 2.5rem;
+.personal-info {
+  font-size: small;
+  letter-spacing: .1em;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: .3em;
+}
+
+.title + div {
+  margin-bottom: 2em;
 }

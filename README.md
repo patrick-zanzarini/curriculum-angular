@@ -1,4 +1,4 @@
-# Curriculum
+# curriculum
 
 Welcome to my personal curriculum project.
 

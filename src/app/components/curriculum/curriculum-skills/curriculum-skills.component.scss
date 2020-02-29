@@ -2,11 +2,13 @@
 
 .grid.tecnologies-layout {
   grid-template-columns: repeat( auto-fit, minmax(21em, 1fr) );
-  gap: 0 1em;
+  gap: 1em 1em;
 }
 
 ul {
   list-style: none; /* Remove default bullets */
+  margin: 0;
+  padding-inline-start: 1.5em;
 }
 
 li {
@@ -30,4 +32,9 @@ li ul {
 h2, h3 {
   margin: 0;
   margin-bottom: 1rem;
+}
+
+.skill-card {
+  background-color: $dark-background;
+  padding: 1.75em 2em;
 }
