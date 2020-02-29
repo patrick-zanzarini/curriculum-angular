@@ -1,5 +1,12 @@
+@import './../../styles/variables';
+
+@media screen and (min-width: $large-screen) {
+  .grid.experience-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .grid.experience-layout {
-  grid-template-columns: 5fr 3.5fr;
   gap: 3rem;
   padding:  2rem 3rem;
 }

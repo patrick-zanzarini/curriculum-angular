@@ -1,9 +1,14 @@
-/* backgrounds colors */
+/* Backgrounds Colors */
 $light-background: rgb(255, 248, 253);
 $dark-background: rgb(46, 37, 42);
 $darker-background: rgb(44, 35, 40);
 
-/* font colors */
+/* Font Colors */
 $highlight-color: rgb(226, 110, 125);
 $font-dark-color: rgb(87, 65, 81);
 $font-white-color: rgba(white, .8);
+
+/* Screen Size */
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen:  1200px;
