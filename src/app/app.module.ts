@@ -7,7 +7,7 @@ import { MasterPageComponent } from './pages/layout/master-page/master-page.comp
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { SideNavService } from './services/side-bar.service';
 import { SideBarDirective } from './directives/side-bar.directive';
-import { DescriptionSideBarComponent } from './components/curriculum/description-side-bar/description-side-bar.component';
+import { DescriptionSideBarComponent } from './components/curriculum/curriculum-side-bar/curriculum-side-bar.component';
 import { curriculumPageComponent } from './pages/curriculum-page/curriculum-page.component';
 import { curriculumHeaderComponent } from './components/curriculum/curriculum-header/curriculum-header.component';
 import { curriculumExperienceComponent } from './components/curriculum/curriculum-experience/curriculum-experience.component';
