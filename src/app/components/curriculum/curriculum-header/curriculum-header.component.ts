@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastService } from 'src/app/services/toast/toast.service';
 
 @Component({
   selector: 'app-curriculum-header',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurriculumHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toastService: ToastService) { }
 
   ngOnInit() {
   }
 
   instagramNotFound() {
-    console.error('Instagram not found!!!!!');
+    this.toastService.showError('Instagram not found!');
   }
 
 }

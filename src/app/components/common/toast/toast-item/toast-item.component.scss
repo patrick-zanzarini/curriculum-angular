@@ -1,0 +1,42 @@
+@import './../../../../styles/variables';
+
+.container {
+  padding: .8em 1em;
+  border-radius: 0.45em 0.1em;
+  border-left: 0.3em solid $alert-color;
+  background-color: white;
+  color: black;
+  font-size: small;
+}
+
+.container.error {
+  border-color: $error-color;
+}
+
+.container.success {
+  border-color: $success-color;
+}
+
+.grid.content {
+  grid-template-columns: 1fr .8em;
+  gap: 1em;
+}
+
+.close-icon {
+  opacity: .5;
+  cursor: pointer;
+  background: url(./../../../../../assets/icons/close.svg) no-repeat center;
+}
+
+.close-icon:hover {
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+.anm-intro {
+  animation: fadeIn 400ms ease-in;
+}
+
+strong {
+  font-size: larger;
+}

@@ -1,3 +1,5 @@
+@import './../../../styles/variables';
+
 .container-padding {
   padding: 2.5rem;
 }
@@ -5,6 +7,13 @@
 .personal-info {
   font-size: small;
   letter-spacing: .1em;
+}
+
+@media screen and (min-width: $small-screen-plus) {
+  .personal-info {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .title {

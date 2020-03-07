@@ -1,0 +1,14 @@
+@import './../../../../styles/variables';
+
+.toast {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 .75em .75em 0;
+  width: 17em;
+  z-index: 1;
+}
+
+.grid.container {
+  gap: .5em;
+}

@@ -16,6 +16,9 @@ import { SideBarComponent } from './components/common/side-bar/side-bar.componen
 import { TimelineItemComponent } from './components/common/timeline/timeline-item/timeline-item.component';
 import { ScreenSizeDetectorDirective } from './directives/screen-size-detector.directive';
 import { ScreenSizeService } from './services/screen-size/screen-size.service';
+import { ToastComponent } from './components/common/toast/toast/toast.component';
+import { ToastItemComponent } from './components/common/toast/toast-item/toast-item.component';
+import { ToastService } from './services/toast/toast.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { ScreenSizeService } from './services/screen-size/screen-size.service';
     curriculumExperienceComponent,
     TimelineItemComponent,
     curriculumEducationComponent,
-    curriculumSkillsComponent
+    curriculumSkillsComponent,
+    ToastComponent,
+    ToastItemComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { ScreenSizeService } from './services/screen-size/screen-size.service';
   ],
   providers: [
     SideNavService,
-    ScreenSizeService
+    ScreenSizeService,
+    ToastService
   ],
   bootstrap: [AppComponent]
 })

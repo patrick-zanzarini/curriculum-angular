@@ -6,7 +6,7 @@ import { ScreenSize } from './screen-size.model';
 export class ScreenSizeService {
   private screenSizeState = new BehaviorSubject<ScreenSize>(ScreenSize.Small);
   readonly screenSize = this.screenSizeState.asObservable();
-  
+
   public getValue(): ScreenSize {
     return this.screenSizeState.value;
   }

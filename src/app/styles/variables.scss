@@ -8,7 +8,13 @@ $highlight-color: rgb(226, 110, 125);
 $font-dark-color: rgb(87, 65, 81);
 $font-white-color: rgba(white, .8);
 
+/* Toast Colors */
+$success-color: rgb(68, 173, 71);
+$error-color: rgb(253, 74, 74);
+$alert-color: rgb(68, 92, 173);
+
 /* Screen Size */
 $small-screen: 768px;
+$small-screen-plus: 769px;
 $medium-screen: 992px;
 $large-screen:  1200px;

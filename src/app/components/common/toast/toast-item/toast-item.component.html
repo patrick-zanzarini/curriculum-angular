@@ -1,0 +1,14 @@
+<div class="container anm-intro" [ngClass]="{'success': message.state == state.Success,
+  'error': message.state == state.Error}">
+
+  <div class="grid content">
+    <div class="font-header">
+      <div>
+        <strong>{{message.title}}</strong>
+      </div>
+      <div>{{message.descrition}}</div>
+    </div>
+    <div class="close-icon" (click)="close()"></div>
+  </div>
+
+</div>
