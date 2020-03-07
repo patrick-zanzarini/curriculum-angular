@@ -1,9 +1,10 @@
-<ng-template appSideBar>
+<ng-template appSideBar (sideBarVisibilityChanged)="sidebarVisible = $event">
   <app-curriculum-side-bar></app-curriculum-side-bar>
 </ng-template>
 
 <app-curriculum-header></app-curriculum-header>
 
+<app-curriculum-side-bar *ngIf="!sidebarVisible"></app-curriculum-side-bar>
 <div class="grid skills-layout">
   <app-curriculum-skills></app-curriculum-skills>
 </div>

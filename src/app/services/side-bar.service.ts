@@ -3,14 +3,21 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class SideNavService {
-  private state = new BehaviorSubject<TemplateRef<any>|null>(null);
-  readonly contents = this.state.asObservable();
+  private templateState = new BehaviorSubject<TemplateRef<any>|null>(null);
+  readonly contents = this.templateState.asObservable();
 
-  set(ref: TemplateRef<any>): void {
-    this.state.next(ref);
+  private visibilityState = new BehaviorSubject<boolean>(true);
+  readonly visibility = this.visibilityState.asObservable();
+
+  setContent(ref: TemplateRef<any>): void {
+    this.templateState.next(ref);
   }
 
   clear(): void {
-    this.state.next(null);
+    this.templateState.next(null);
+  }
+
+  setVisibility(isVisible: boolean): void {
+    this.visibilityState.next(isVisible);
   }
 }

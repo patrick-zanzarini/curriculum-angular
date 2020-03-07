@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './curriculum-page.component.html',
   styleUrls: ['./curriculum-page.component.scss']
 })
-export class curriculumPageComponent implements OnInit {
+export class CurriculumPageComponent implements OnInit {
+  sidebarVisible = true;
 
   constructor() { }
 

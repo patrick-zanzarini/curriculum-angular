@@ -15,6 +15,6 @@
   margin-bottom: .3em;
 }
 
-.title + div {
+.title + div:not(:last-child) {
   margin-bottom: 2em;
 }

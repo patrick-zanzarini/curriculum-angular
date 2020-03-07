@@ -1,7 +1,7 @@
 @import "./../../../styles/variables.scss";
 
 .grid.tecnologies-layout {
-  grid-template-columns: repeat( auto-fit, minmax(21em, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(18em, 1fr) );
   gap: 1em 1em;
 }
 
