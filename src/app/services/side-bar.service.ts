@@ -9,6 +9,10 @@ export class SideNavService {
   private visibilityState = new BehaviorSubject<boolean>(true);
   readonly visibility = this.visibilityState.asObservable();
 
+  public getVisibilityState(): boolean {
+    return  this.visibilityState.value;
+  }
+
   setContent(ref: TemplateRef<any>): void {
     this.templateState.next(ref);
   }

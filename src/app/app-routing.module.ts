@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MasterPageComponent } from './pages/layout/master-page/master-page.component';
 import { CurriculumPageComponent } from './pages/curriculum-page/curriculum-page.component';
-import { TimelineItemComponent } from './components/timeline/timeline-item/timeline-item.component';
 
 
 const routes: Routes = [
@@ -14,11 +13,6 @@ const routes: Routes = [
         path: '',
         component: CurriculumPageComponent
       },
-
-      {
-        path: 'teste',
-        component: TimelineItemComponent
-      }
     ]
   }
 

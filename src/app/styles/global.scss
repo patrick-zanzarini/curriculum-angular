@@ -1,4 +1,8 @@
 @import 'variables';
+@import 'keyframes';
+
+@include animation-keyframes;
+
 
 html, body {
   margin: 0;

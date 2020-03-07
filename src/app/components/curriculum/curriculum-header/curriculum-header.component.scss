@@ -1,4 +1,4 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 @media screen and (min-width: $medium-screen) {
   .grid.container-layout {
@@ -15,7 +15,7 @@
 }
 
 .main-image {
-  background-image: url('./../../../../assets/profile.jpg');
+  background-image: url("./../../../../assets/profile.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -23,7 +23,7 @@
 h1 {
   font-size: 400%;
   font-weight: 800;
-  line-height: .9em;
+  line-height: 0.9em;
 }
 
 p {
@@ -35,10 +35,37 @@ ul {
   margin-top: 2em;
   text-transform: uppercase;
   color: $font-dark-color;
-  letter-spacing: .175em;
+  letter-spacing: 0.175em;
   font-weight: 600;
 }
 
 li a:hover {
   color: $highlight-color;
+}
+
+.anm-intro {
+  animation: textSlideRight 400ms ease-out, fadeIn 400ms ease-in;
+  animation-duration: 400ms;
+}
+
+.anm-name {
+  animation: textSlideDown 400ms ease-out, fadeIn 400ms ease-in;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+}
+
+.anm-detail {
+  animation: textSlideDown 300ms ease-out, fadeIn 300ms ease-in;
+  animation-delay: 400ms;
+  animation-fill-mode: backwards;
+}
+
+.anm-links {
+  animation: textSlideDown 300ms ease-out, fadeIn 300ms ease-in;
+  animation-delay: 600ms;
+  animation-fill-mode: backwards;
+}
+
+a {
+  cursor: pointer;
 }

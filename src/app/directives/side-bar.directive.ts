@@ -7,7 +7,7 @@ import { SideNavService } from '../services/side-bar.service';
 export class SideBarDirective implements OnInit {
   @Output() sideBarVisibilityChanged = new EventEmitter<boolean>();
 
-  constructor(private sideNavService: SideNavService, private ref: TemplateRef<any>) {}
+  constructor(private sideNavService: SideNavService, private ref: TemplateRef<any>) { }
 
   ngOnInit(): void {
     this.sideNavService.setContent(this.ref);
@@ -15,5 +15,6 @@ export class SideBarDirective implements OnInit {
     this.sideNavService.visibility.subscribe(isVisible => {
       this.sideBarVisibilityChanged.emit(isVisible);
     });
+    this.sideBarVisibilityChanged.emit(this.sideNavService.getVisibilityState());
   }
 }

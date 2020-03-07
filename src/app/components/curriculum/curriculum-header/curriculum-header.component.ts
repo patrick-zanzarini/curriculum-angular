@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './curriculum-header.component.html',
   styleUrls: ['./curriculum-header.component.scss']
 })
-export class curriculumHeaderComponent implements OnInit {
+export class CurriculumHeaderComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  instagramNotFound() {
+    console.error('Instagram not found!!!!!');
   }
 
 }
