@@ -65,3 +65,13 @@ ul.inline.center {
 .grid {
   display: grid;
 }
+
+.layout-padding {
+  padding: 2em 3em;
+}
+
+@media screen and (max-width: $small-screen) {
+  .layout-padding {
+    padding: 1.3em 2em;
+  }
+}

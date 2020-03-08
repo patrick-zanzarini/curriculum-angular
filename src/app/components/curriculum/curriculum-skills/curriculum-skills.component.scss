@@ -6,9 +6,10 @@
 }
 
 ul {
-  list-style: none; /* Remove default bullets */
-  margin: 0;
+  list-style: none;
   padding-inline-start: 1.5em;
+  margin: 0;
+  margin-bottom: .3em;
 }
 
 li {
@@ -36,5 +37,5 @@ h2, h3 {
 
 .skill-card {
   background-color: $dark-background;
-  padding: 1.75em 2em;
+  padding: 1.25em 1.5em;
 }

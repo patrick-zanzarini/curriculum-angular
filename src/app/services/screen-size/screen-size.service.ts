@@ -12,18 +12,28 @@ export class ScreenSizeService {
   }
 
   updateScreenWidth() {
-    const width = window.innerWidth;
+    let newScreenSize: ScreenSize;
 
+    if (!CSS.supports('display', 'grid')) {
+      newScreenSize = ScreenSize.Small;
+    } else {
+      newScreenSize = this.screenSizeToEnum(window.innerWidth);
+    }
+
+    if (newScreenSize !== this.screenSizeState.value) {
+      this.screenSizeState.next(newScreenSize);
+    }
+  }
+
+  screenSizeToEnum(width: number): ScreenSize {
     if (width <= ScreenSize.Small) {
-      this.screenSizeState.next(ScreenSize.Small);
-      return;
+      return ScreenSize.Small;
     }
 
     if (width > ScreenSize.Small && width <= ScreenSize.Medium) {
-      this.screenSizeState.next(ScreenSize.Medium);
-      return;
+      return ScreenSize.Medium;
     }
 
-    this.screenSizeState.next(ScreenSize.Large);
+    return ScreenSize.Large;
   }
 }
