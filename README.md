@@ -1,6 +1,8 @@
 # Curriculum Project
 
-Welcome to my personal curriculum project.
+Welcome to my personal Curriculum Project.
+
+To see it go to: https://patrick-zanzarini.github.io/
 
 ## Development server
 
