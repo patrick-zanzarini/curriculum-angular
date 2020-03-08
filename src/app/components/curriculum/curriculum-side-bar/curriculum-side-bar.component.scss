@@ -4,11 +4,6 @@
   padding: 2rem;
 }
 
-.personal-info {
-  font-size: small;
-  letter-spacing: .1em;
-}
-
 @media screen and (min-width: $small-screen-plus) {
   .personal-info {
     position: sticky;
@@ -26,4 +21,17 @@
 
 .title + div:not(:last-child) {
   margin-bottom: 2em;
+}
+
+.personal-info {
+  font-size: small;
+  letter-spacing: .1em;
+}
+
+@for $i from 0 through 5 {
+  .personal-info div:nth-child(#{$i + 1}) {
+    animation: textSlideRight 400ms ease-out, fadeIn 400ms ease-in;
+    animation-fill-mode: backwards;
+    animation-delay: 80ms * $i;
+  }
 }

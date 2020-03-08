@@ -39,3 +39,19 @@ h2, h3 {
   background-color: $dark-background;
   padding: 1.25em 1.5em;
 }
+
+$base-delay: 600ms;
+
+h2 {
+  animation: textSlideRight 400ms ease-out, fadeIn 400ms ease-in;
+  animation-fill-mode: backwards;
+  animation-delay: $base-delay;
+}
+
+@for $i from 0 through 5 {
+  .skill-card:nth-child(#{$i + 1}) {
+    animation: textSlideDown 400ms ease-out, fadeIn 400ms ease-in;
+    animation-fill-mode: backwards;
+    animation-delay: $base-delay + 100ms + 80ms * $i;
+  }
+}

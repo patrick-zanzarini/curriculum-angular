@@ -9,9 +9,9 @@ import { SideBarDirective } from './directives/side-bar.directive';
 import { DescriptionSideBarComponent } from './components/curriculum/curriculum-side-bar/curriculum-side-bar.component';
 import { CurriculumPageComponent } from './pages/curriculum-page/curriculum-page.component';
 import { CurriculumHeaderComponent } from './components/curriculum/curriculum-header/curriculum-header.component';
-import { curriculumExperienceComponent } from './components/curriculum/curriculum-experience/curriculum-experience.component';
-import { curriculumEducationComponent } from './components/curriculum/curriculum-education/curriculum-education.component';
-import { curriculumSkillsComponent } from './components/curriculum/curriculum-skills/curriculum-skills.component';
+import { CurriculumExperienceComponent } from './components/curriculum/curriculum-experience/curriculum-experience.component';
+import { CurriculumEducationComponent } from './components/curriculum/curriculum-education/curriculum-education.component';
+import { CurriculumSkillsComponent } from './components/curriculum/curriculum-skills/curriculum-skills.component';
 import { SideBarComponent } from './components/common/side-bar/side-bar.component';
 import { TimelineItemComponent } from './components/common/timeline/timeline-item/timeline-item.component';
 import { ScreenSizeDetectorDirective } from './directives/screen-size-detector.directive';
@@ -30,10 +30,10 @@ import { ToastService } from './services/toast/toast.service';
     DescriptionSideBarComponent,
     CurriculumPageComponent,
     CurriculumHeaderComponent,
-    curriculumExperienceComponent,
+    CurriculumExperienceComponent,
     TimelineItemComponent,
-    curriculumEducationComponent,
-    curriculumSkillsComponent,
+    CurriculumEducationComponent,
+    CurriculumSkillsComponent,
     ToastComponent,
     ToastItemComponent
   ],

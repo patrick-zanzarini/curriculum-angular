@@ -5,8 +5,21 @@ strong {
   font-size: large;
 }
 
+$base-delay: 1000ms;
+
 h2 {
   margin: 0px;
   margin-bottom: 1rem;
+
+  animation: textSlideRight 400ms ease-out, fadeIn 400ms ease-in;
+  animation-fill-mode: backwards;
+  animation-delay: $base-delay;
 }
 
+@for $i from 0 through 5 {
+  div:nth-child(#{$i + 1}) {
+    animation: textSlideDown 400ms ease-out, fadeIn 400ms ease-in;
+    animation-fill-mode: backwards;
+    animation-delay: $base-delay + 100ms + 80ms * $i;
+  }
+}
