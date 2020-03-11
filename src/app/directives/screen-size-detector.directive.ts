@@ -1,5 +1,5 @@
-import { Directive, TemplateRef, OnInit, HostListener } from '@angular/core';
-import { ScreenSizeService } from '../services/screen-size/screen-size.service';
+import { Directive, OnInit, HostListener } from '@angular/core';
+import { ScreenSizeService } from '@services/screen-size/screen-size.service';
 
 @Directive({
   selector: '[appScreenSizeDetector]',

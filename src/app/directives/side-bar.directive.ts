@@ -1,5 +1,5 @@
 import { Directive, TemplateRef, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
-import { SideNavService } from '../services/side-bar.service';
+import { SideNavService } from '@services/side-bar.service';
 
 @Directive({
   selector: '[appSideBar]',

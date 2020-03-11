@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ViewContainerRef, AfterViewInit, EmbeddedViewRef, HostListener } from '@angular/core';
-import { SideNavService } from 'src/app/services/side-bar.service';
-import { ScreenSizeService } from 'src/app/services/screen-size/screen-size.service';
-import { ScreenSize } from 'src/app/services/screen-size/screen-size.model';
+import { SideNavService } from '@services/side-bar.service';
+import { ScreenSizeService } from '@services/screen-size/screen-size.service';
+import { ScreenSize } from '@services/screen-size/screen-size.model';
 
 @Component({
   selector: 'app-side-bar',

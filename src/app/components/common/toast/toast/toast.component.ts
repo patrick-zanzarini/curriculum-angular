@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastMessageModel } from 'src/app/services/toast/toast-message.model';
-import { ToastService } from 'src/app/services/toast/toast.service';
+import { ToastMessageModel } from '@services/toast/toast-message.model';
+import { ToastService } from '@services/toast/toast.service';
 
 @Component({
   selector: 'app-toast',

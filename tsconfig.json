@@ -1,7 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@styles/*": ["app/styles/*"],
+      "@services/*": ["app/services/*"],
+      "@directives/*": ["app/directives/*"],
+      "@components/*": ["app/components/*"],
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

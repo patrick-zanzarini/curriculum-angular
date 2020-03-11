@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ToastMessageModel } from 'src/app/services/toast/toast-message.model';
-import { ToastMessageState } from 'src/app/services/toast/toast-message.enum';
-import { ToastService } from 'src/app/services/toast/toast.service';
+import { ToastMessageModel } from '@services/toast/toast-message.model';
+import { ToastMessageState } from '@services/toast/toast-message.enum';
+import { ToastService } from '@services/toast/toast.service';
 
 @Component({
   selector: 'app-toast-item',
